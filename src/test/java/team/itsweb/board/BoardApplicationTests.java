@@ -1,10 +1,10 @@
-package team.itsweb.service;
+package team.itsweb.board;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceApplicationTests {
+class BoardApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'team.its-web.service' is invalid and this project uses 'team.itsweb.service' instead.
+* The original package name 'team.its-web.service' is invalid and this project uses 'team.itsweb.board' instead.
 
 # Getting Started
 
