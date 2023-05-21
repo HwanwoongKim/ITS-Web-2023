@@ -29,6 +29,7 @@ public class BoardController {
     */
 
     @PostMapping("/board/writepro")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public Board boardwritePro(@RequestBody Board board){
         boardService.write(board);
 
