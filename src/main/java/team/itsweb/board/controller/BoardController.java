@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import team.itsweb.board.entity.Board;
 import team.itsweb.board.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
@@ -35,12 +36,14 @@ public class BoardController {
     }
 
     @GetMapping("/board/viewlist")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @ResponseBody
     public List<Board> boardList(){
         return boardService.boardList();
     }
 
     @GetMapping("board/viewPost") //localhost:8090/board/view?id=1
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @ResponseBody
     public Board boardView(Integer id){
         return boardService.boardView(id);
