@@ -1,6 +1,6 @@
 package team.itsweb.board.controller;
 
-import org.springframework.core.io.Resource;
+import  org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,6 +21,7 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
+
 @RestController
 public class BoardController {
 
@@ -35,7 +36,10 @@ public class BoardController {
         return "boardwrite";
     }
     */
-
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to ITS!";
+    }
     @PostMapping("/board/writepro")
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     public Board boardwritePro(@RequestBody Board board){
